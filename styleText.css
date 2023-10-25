@@ -1,0 +1,39 @@
+.container-text {
+    
+    height: 50%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    row-gap: 75px;
+    right: 250px;
+    top: 200px;
+}
+
+.text {
+    width: 350px;
+    background-color: #000;
+    border-radius: 15px;
+    padding: 10px 5px;
+}
+
+.text01{
+    letter-spacing: 2.3px;
+    
+}
+
+.text p {
+    margin: 0 10px;
+}
+
+
+
+.text02 {
+    letter-spacing: 1.3px;
+    font-size: 1.7rem;
+    font-weight: 900;
+    text-align: center;
+    
+}
+
+
+

@@ -1,0 +1,55 @@
+.mascote {
+    left: 350px;
+    top: 50px;
+    height: 300px;
+}
+
+.container-text {
+    top: 50px;
+    row-gap: 35px;
+}
+
+.text02 {
+    text-align: start;
+}
+
+.container-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-button {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 125px;
+    
+}
+
+
+
+.container-button a   {
+    padding: 10px 0px;
+    width: 160px;
+    border-radius: 12px;
+    border: #c8ff00 4px  outset;
+    font-style: none;
+    list-style: none;
+    text-decoration: none;
+   
+    transition: 0.5s ease;
+}
+
+.container-button a:hover {
+    background-color: #c8ff0005;
+    border: #fff double 4px ;
+    animation: all none;
+    cursor: pointer;
+}
+
+li {
+    font-size: 1rem;
+    text-align: center;
+}
