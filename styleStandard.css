@@ -57,7 +57,8 @@ main {
     }
 }
 
-p {
+.text p {
+    color:#fff;
     font-size: 1.4rem;
 }
 
