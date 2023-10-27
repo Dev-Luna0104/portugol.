@@ -1,6 +1,6 @@
 .container-text {
     
-    height: 50%;
+    height: 50% ;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -10,7 +10,7 @@
 }
 
 .text {
-    width: 350px;
+    width: 350px ;
     background-color: #000;
     border-radius: 15px;
     padding: 10px 5px;
