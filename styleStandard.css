@@ -31,7 +31,7 @@ main {
 .mascote {
     filter: drop-shadow(#000  2px 5px 5px);
     top: calc(50% - 200px);
-    left: 19%;
+    left: 25%;
     position: absolute;
     height: 400px;
     animation: 2s  infinite-mascote infinite ease-in-out;

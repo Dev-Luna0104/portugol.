@@ -25,18 +25,24 @@
 
 .container-button {
     width: 65%;
-    display: flex;
-    justify-content: space-between;
+    height: 150px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "b01 b02 b03 b04"
+    " b05 "  ;
+    column-gap: 25px;
     position: absolute;
-    bottom: 125px;
+    bottom: 135px;
     
 }
 
 
 
 .container-button a   {
-    padding: 10px 0px;
-    width: 160px;
+    padding: 10px 15px;
+    height: 30px;
+    width: auto;
     border-radius: 12px;
     border: #c8ff00 4px  outset;
     font-style: none;
@@ -44,6 +50,12 @@
     text-decoration: none;
    
     transition: 0.5s ease;
+}
+
+.b05 {
+    position: absolute;
+    left: calc(50% - 110px);
+    bottom: 0;
 }
 
 .container-button a:hover {
