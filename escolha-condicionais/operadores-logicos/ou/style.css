@@ -1,0 +1,75 @@
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mascote {
+    position: relative;
+    top: -15px;
+    left: auto;
+}
+
+.container-text {
+    position: relative;
+    right: auto;
+    top: auto;
+    row-gap:25px;
+}
+
+.text {
+    width:250px;
+    padding: 15px 5px;
+}
+
+.text02 , .text02 p{
+    font-size: 1.2rem;
+    text-align: start;
+
+}
+
+.logica {
+    display: block;
+    background-color: #ffffffa0;
+    padding: 20px 10px;
+    border-radius: 10px;
+    box-shadow: #000 0 10px 25px -10px;
+}
+
+.logica p span, .logica code span {
+    font-weight: 700;
+    text-shadow: #000 0px 1px 1.5px ;
+}
+
+.logica p {
+    margin: 5px 0;
+}
+
+.logica p, .logica code  {
+    display: block;
+    color:#000;
+    margin: 5px 0;
+}
+.text-red{color: #f00;}
+.text-green{color:#0f0}
+.text-blue{color:#00f}
+
+.logica code:last-child {
+    font-size: 1.3rem;
+    animation: point infinite 2s;
+}
+
+@keyframes point {
+    
+    0% {
+        letter-spacing: 0;
+    }
+
+    50% {
+        letter-spacing: 4px;
+    }
+
+
+    100% {
+        letter-spacing:0 ;
+    }
+}

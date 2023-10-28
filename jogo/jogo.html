@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="../styleStandard.css">
+
+    <link rel="stylesheet" href="jogo.css">
+
+    <link rel="shortcut icon" href="../assets/Mascote_Site_Portugol_ajuda-removebg-preview.png" type="image/x-icon">
+
+</head>
+<body>
+
+    <main>
+
+
+          <div>
+            <table id="board">
+                <tr>
+                  <td onclick="makeMove(0, 0)"></td>
+                  <td onclick="makeMove(0, 1)"></td>
+                  <td onclick="makeMove(0, 2)"></td>
+                </tr>
+                <tr>
+                  <td onclick="makeMove(1, 0)"></td>
+                  <td onclick="makeMove(1, 1)"></td>
+                  <td onclick="makeMove(1, 2)"></td>
+                </tr>
+                <tr>
+                  <td onclick="makeMove(2, 0)"></td>
+                  <td onclick="makeMove(2, 1)"></td>
+                  <td onclick="makeMove(2, 2)"></td>
+                </tr>
+              </table>
+              
+              <p id="message"></p>
+            </div>
+              
+              <script>
+                let currentPlayer = 'X';
+                let gameOver = false;
+              
+                function makeMove(row, col) {
+                  if (gameOver) return;
+                  
+                  const cell = document.getElementById("board").rows[row].cells[col];
+                  if (cell.innerHTML === '') {
+                    cell.innerHTML = currentPlayer;
+                    if (checkWinner(row, col)) {
+                      document.getElementById("message").innerHTML = `Jogador ${currentPlayer} ganhou!`;
+                      gameOver = true;
+                    } else if (isBoardFull()) {
+                      document.getElementById("message").innerHTML = "Deu Véia";
+                      gameOver = true;
+                    } else {
+                      currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+                    }
+                  }
+                }
+              
+                function checkWinner(row, col) {
+                  const cells = document.getElementById("board").rows;
+                  const symbol = cells[row].cells[col].innerHTML;
+              
+                  // Check row
+                  for (let i = 0; i < 3; i++) {
+                    if (cells[row].cells[i].innerHTML !== symbol) {
+                      break;
+                    }
+                    if (i === 2) {
+                      return true;
+                    }
+                  }
+              
+                  // Check column
+                  for (let i = 0; i < 3; i++) {
+                    if (cells[i].cells[col].innerHTML !== symbol) {
+                      break;
+                    }
+                    if (i === 2) {
+                      return true;
+                    }
+                  }
+              
+                  // Check diagonals
+                  if (row === col || row + col === 2) {
+                    for (let i = 0; i < 3; i++) {
+                      if (cells[i].cells[i].innerHTML !== symbol) {
+                        break;
+                      }
+                      if (i === 2) {
+                        return true;
+                      }
+                    }
+                    for (let i = 0; i < 3; i++) {
+                      if (cells[i].cells[2 - i].innerHTML !== symbol) {
+                        break;
+                      }
+                      if (i === 2) {
+                        return true;
+                      }
+                    }
+                  }
+              
+                  return false;
+                }
+              
+                function isBoardFull() {
+                  const cells = document.getElementById("board").querySelectorAll("td");
+                  for (const cell of cells) {
+                    if (cell.innerHTML === '') {
+                      return false;
+                    }
+                  }
+                  return true;
+                }
+              </script>
+              
+
+
+        <nav>
+            <a class="button previous" href="../index.html">
+                <img class="material-icons icons-previous" src="../assets/up-arrow_7144286.png" alt="">
+            </a>
+        </nav>
+    </main>
+        
+    
+</body>
+</html>

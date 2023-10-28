@@ -1,0 +1,73 @@
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mascote {
+    position: relative;
+    top: auto;
+    left: auto;
+}
+
+.container-text {
+    position: relative;
+    top: -55px;
+    row-gap: 15px;
+    right: auto;
+}
+
+.text {
+    padding: 15px 5px;
+}
+
+.text02 , .text02 p{
+    font-size: 1.2rem;
+    text-align: start;
+
+}
+
+.textCode{
+    display: block;
+    background-color: #ffffffa0;
+    padding: 20px 10px;
+    border-radius: 10px;
+    box-shadow: #000 0 10px 25px -10px;
+}
+
+.textCode p span, .textCode code span {
+    font-weight: 700;
+    text-shadow: #000 0px 1px 1.5px ;
+}
+
+.textCode p{
+    margin: 15px 0;
+}
+
+.textCode p, .textCode code  {
+    display: block;
+    color:#000;
+    margin: 5px 0;
+}
+.text-red{color: #f00;}
+.text-green{color:#0f0}
+.text-blue{color:#00f}
+
+.textCode code:last-child {
+    font-size: 1.3rem;
+    animation: point infinite 2s;
+}
+
+@keyframes point {  
+    0% {letter-spacing: 0;}
+
+    50% {letter-spacing: 4px;}
+
+    100% {letter-spacing:0 ;}
+}
+
+.fluxograma {
+    width: 400px;
+    height: 500px;
+    filter: drop-shadow(#fff 1px 2px 2px);
+}
