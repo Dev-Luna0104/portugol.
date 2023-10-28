@@ -1,0 +1,60 @@
+.mascote {
+    left: 15%;
+    top: 80px;
+    height: 400px;
+}
+
+.container-text {
+    top: 125px;
+    row-gap: 65px;
+}
+
+.container-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-button {
+    width: 65%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    column-gap: 25px;
+    position: absolute;
+    bottom: 0px;
+    
+}
+
+
+
+.container-button a   {
+    align-items: center;
+    padding: 8px;
+    height: 30px;
+    width: 150px;
+    border-radius: 12px;
+    border: #c8ff00 5px  outset;
+    font-style: none;
+    list-style: none;
+    text-decoration: none;
+    display: block;
+   
+    transition: 0.5s ease;
+}
+
+
+
+.container-button a:hover {
+    background-color: #c8ff0005;
+    border: #fff double 5.5px ;
+    animation: all none;
+    cursor: pointer;
+}
+
+li {margin-top: 5px;
+    font-size: 1.1rem;
+    font-weight: 550;
+    text-align: center;
+    color: #000;
+}
