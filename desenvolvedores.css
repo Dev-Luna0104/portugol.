@@ -7,13 +7,13 @@
 .nav-dev {
 
     position: absolute;
-    top: 40%;
-    left: 7%;
+    top: 22%;
+    left: 7.5%;
     transition: 0.5s linear;
 }
 
 .nav-dev:hover {
-    top: 35%;
+    top: 18%;
 }
 
 .dev {
@@ -45,7 +45,8 @@
 .dev ul {
     padding: 2px;
     position: absolute;
-    display: none;
+    display: block;
+    opacity: 0;
     top: 43px;
     left: 0;
     width:99% ;
@@ -55,12 +56,13 @@
 }
 
 .dev:hover ul{
-    display: block;
     transition: 1s ease ;
     height: auto;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     box-shadow: #000 0 0 35px -10px;
+    opacity: 1;
+
     
 }        
 

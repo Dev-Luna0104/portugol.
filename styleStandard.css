@@ -19,22 +19,23 @@ body {
     /* background-color: #000; */
 }
 
-.nav-jogo {
-    position: absolute;
-    bottom: 135px;
+.nav-button {
+    position:absolute;
+    bottom: 110px;
     left: 7%;
 }
 
-.nav-jogo ul {
-    display: flex;
-    justify-content: center;
+.nav-button ul {
+    display: block;
+    
 }
 
 
 
-.a-jogo   {
+.ab   {
     align-items: center;
-    padding: 10px;
+    margin: 15px 0;
+    padding: 8px 10px;
     height: 30px;
     width: 180px;
     border-radius: 12px;
@@ -49,14 +50,14 @@ body {
 
 
 
-.a-jogo:hover {
+.ab:hover {
     background-color: #c8ff0005;
     border: #fff double 5.5px ;
     animation: all none;
     cursor: pointer;
 }
 
-.a-jogo li {
+.ab li {
     font-size: 1.1rem;
     font-weight: 550;
     text-align: center;
