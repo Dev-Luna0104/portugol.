@@ -8,6 +8,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 350px;
+    color: #000;
 }
 
 .title-page span {
