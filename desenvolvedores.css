@@ -7,13 +7,13 @@
 .nav-dev {
 
     position: absolute;
-    top: 22%;
+    top: 19%;
     left: 7.5%;
     transition: 0.5s linear;
 }
 
 .nav-dev:hover {
-    top: 18%;
+    top: 15%;
 }
 
 .dev {

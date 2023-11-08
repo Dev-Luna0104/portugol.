@@ -27,8 +27,9 @@ h2 {
 
 h3 {
   color: #000;
-  font-weight: normal;
+  font-weight:200;
   font-size: 1.2rem;
+  margin:0 0 8px 23px
 }
 
   .container-form-group {
@@ -41,11 +42,13 @@ h3 {
   }
   
   .form-group {
-    margin-bottom: 15px;
+    margin: 10px 0 5px;
 
   }
 
   .container-form-group div div input {
+    box-shadow: #000 1px 1px 2px;
+    filter: drop-shadow(#000 1px 1px 2px);
     width: 350px;
 
   }
@@ -63,35 +66,32 @@ h3 {
     width: 350px;
     color: #000;
     display: flex;
-    margin-bottom: 5px;
+    margin: 0 0 5px 10px;
   }
   
-  input, textarea {
+  input#qual, input {
     padding: 8px;
     border: 1.5px solid #eee;
     border-radius: 4px;
     color: #000;
     background-color: #00000000;
-
+ 
   }
+  input#qual {
+    box-shadow: #000 1px 1px 2px;
+
+    width: 350px;
+  }
+
+
 
   input:valid {
     border: #0a0 2px solid ;
   }
-
-  textarea {    
-    position: absolute;
-    width: 350px;
-    max-width:350px ;
-    min-width: 350px;
-    max-height:100px ;
-  }
-
- 
   
 button {
   position: absolute;
-    bottom: 100px;
+    bottom: 75px;
     left: calc(50% - 75px);
     width: 150px;
     padding: 10px;
