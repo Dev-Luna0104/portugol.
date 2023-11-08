@@ -1,3 +1,64 @@
+/* ----titulo ------------------------------------------ */
+
+.title-page {
+    position: absolute;
+    top:20px;
+    left: calc(50% - 175px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 350px;
+}
+
+.title-page span {
+    color: #000;
+    font-size: 2.2rem;
+    animation: infinite title-animation 2.5s steps(3);
+
+}
+
+.textAnimation02{
+    animation-delay: 0;
+}
+.textAnimation01 {
+    animation-delay: -5s;
+    color: red;
+}
+
+.-n {
+    color: red;
+    margin: 0 15px 0 0;
+}
+
+@keyframes title-animation {
+
+    0%{
+        text-shadow: #55f 2px 2px 1px, #c8ff00 -2px -2px 1px;
+    }
+    15%{
+        text-shadow: #55f -3px -2px 1px, #c8ff00 2px 2px 1px;
+    }
+    50%{
+        text-shadow: #55f 2px 3px 1px, #c8ff00 -2px -2px 1px;
+    }
+
+    55%{
+        text-shadow: rgb(255, 133, 85) 2px 3px 1px, #2f00ff -2px -2px 1px;
+    }
+    60%{
+        text-shadow: #55f 3px -2px 1px, #ff0080 2px 2px 1px;
+    }
+
+    70%{
+        text-shadow: #55f 3px -2px 1px, #c8ff00 2px 2px 1px;
+    }
+    100%{
+        text-shadow: #55f 1px 2px 1px, #c8ff00 -2px -2px 1px;
+    }
+}
+
+
+/* ------------------------------------------------- */
 .container-text {
     
     height: 50% ;
